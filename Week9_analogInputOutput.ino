@@ -54,7 +54,7 @@ void loop() {
   //LED 1 Flashing
   if (led1Flashing && currentMillis - prevMillis1 >= flashDelay) {
     prevMillis1 = currentMillis;
-    static bool led1On = false;
+    bool led1On = false;
     led1On = !led1On;
     analogWrite(led1Pin, led1On ? brightness : 0);
   }
@@ -62,7 +62,7 @@ void loop() {
   //LED 2 Flashing
   if (led2Flashing && currentMillis - prevMillis2 >= flashDelay) {
     prevMillis2 = currentMillis;
-    static bool led2On = false;
+    bool led2On = false;
     led2On = !led2On;
     analogWrite(led2Pin, led2On ? brightness : 0);
   }
