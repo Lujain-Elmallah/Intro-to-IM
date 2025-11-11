@@ -3,7 +3,6 @@
 const int stripPins[3] = {3, 4, 5}; // four foil strips
 const int buzzerPin = 8;               // buzzer (passive piezo)
 const int potPin = A0;                 // potentiometer for pitch control
-const int pullDown = 10000;            // used for wiring, not in code
 
 // Base frequencies for the 4 strips (Hz) - change to taste
 int baseFreqs[3] = {165, 494, 659};
